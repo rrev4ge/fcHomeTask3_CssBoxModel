@@ -90,14 +90,14 @@ p {
 #solutions-Blc {
     display: block;
     width: 100%;
-    padding: 2em 0;
+    padding: 2em 0 1em;
     background-color: #333333;
 
 }
 
 #solutions-Blc li div h3, #solutions-Blc li div p {
     margin: 0;
-    padding: 1em 0;
+    padding: 1em 0 ;
 }
 
 #solutions-Blc li {
