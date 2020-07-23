@@ -102,10 +102,9 @@ p {
     width: 30%;
     background-color: white;
     color: black;
-
 }
 
-#solutions-Blc li div{
+#solutions-Blc li div {
     padding: 1em;
 }
 
@@ -120,9 +119,6 @@ p {
     justify-content: space-around;
     margin-left: 25%;
     width: 50%;
-
-
-
 }
 
 #articleF-Blc {
@@ -133,7 +129,6 @@ p {
     z-index: -1;
 
 }
-
 
 
 #articleF-Blc h2 {
@@ -183,15 +178,17 @@ p {
     color: mediumblue;
 }
 
+@media (min-width: 12450px) {
 
-.grid {
+    grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 }
 
-#aboutUs-Blc div, #footer-block div {
-    grid-column: span 2;
-}
+    #aboutUs-Blc div, #footer-block div {
+        grid-column: span 2;
+    } }
+
 
 
 
