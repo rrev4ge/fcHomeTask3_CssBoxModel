@@ -110,9 +110,7 @@ p {
     width: 15%;
 }
 
-.solutions ul li div {
-    padding: 1em;
-}
+
 
 
 .solutions ul li img {
@@ -120,9 +118,9 @@ p {
     height: 35%;
 }
 
-.solutions li div h3, #solutions-Blc li div p {
+.solutions li div p {
     margin: 0;
-    padding: 1em 0 ;
+    padding: 0 1em 3em;
 }
 
 
