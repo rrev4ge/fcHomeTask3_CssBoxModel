@@ -6,13 +6,15 @@
 }
 
 h1, h2, h3 {
-    margin: 2em 0.5em;
     font-size: 1.25em;
     font-weight: bold;
+    margin: 0;
+    padding: 1em 0;
 }
 
 p {
-    margin: 2em 1.5em;
+    margin: 0;
+    padding: 1em 0;
     font-size: 1.1em;
 }
 
@@ -20,7 +22,7 @@ p {
     display: block;
     background-image: url(../images/headerBack.png);
     width: 100%;
-    height: 450px;
+    height: auto;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
@@ -29,14 +31,14 @@ p {
 
 .headerBlock h1 {
 
-    margin: 2em 25% 0.5em;
+    margin: 1em 25% 0;
     display: inline-block;
     font-size: 2.5em;
 
 }
 
 .headerBlock p {
-    margin: 1em 25% 1em;
+    margin: 0 25%;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -50,7 +52,7 @@ p {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 1em 0;
+    margin: 1em 25%  5em;
 
 }
 
@@ -73,15 +75,15 @@ p {
 }
 
 #articleH-Blc h2 {
-    margin: 1em 25%;
+    margin:0 25%;
     display: inline-block;
     font-size: 2em;
 }
 
 #articleH-Blc  p {
-    margin: 1em 25% 2em;
+    margin: 0 25% 1em;
     display: inline-block;
-    columns: 2
+    columns: 1
 }
 
 #solutions-Blc {
@@ -99,24 +101,24 @@ p {
 
 #solutions-Blc li {
     display: inline-block;
-    width: 30%;
     background-color: white;
     color: black;
+    margin: 0 0 1em;
 }
 
-#solutions-Blc li div {
+#solutions-Blc ul li div {
     padding: 1em;
 }
 
 
 #solutions-Blc ul img {
     width: 100%;
-    height: 30%;
+    height: 35%;
 }
 
 #solutions-Blc ul {
-    display: flex;
-    justify-content: space-around;
+    list-style: none;
+    padding: 0;
     margin-left: 25%;
     width: 50%;
 }
@@ -132,20 +134,17 @@ p {
 
 
 #articleF-Blc h2 {
-    margin: 1em 25%;
+    margin: 0 25%;
     display: inline-block;
     font-size: 2em;
 }
 
 #articleF-Blc  p {
 
-    margin: 1em 25%;
+    margin: 0 25% 1em;
     display: inline-block;
-    /*font-size: 1.25em;*/
 
 }
-
-
 
 
 #aboutUs-Blc div {
@@ -178,18 +177,33 @@ p {
     color: mediumblue;
 }
 
-@media (min-width: 12450px) {
+@media (min-width: 800px) {
 
-    grid {
+
+    .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-}
+    }
 
     #aboutUs-Blc div, #footer-block div {
         grid-column: span 2;
-    } }
+    }
 
 
+    #solutions-Blc ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #solutions-Blc li {
+        width: 33%;
+    }
+
+    #articleH-Blc  p {
+        columns: 2;
+    }
+
+}
 
 
 
