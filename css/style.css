@@ -1,0 +1,199 @@
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 2em 0.5em;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+p {
+    margin: 2em 1.5em;
+    font-size: 1.1em;
+}
+
+.headerBlock {
+    display: block;
+    background-image: url(../images/headerBack.png);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    z-index: -1;
+}
+
+.headerBlock h1 {
+
+    margin: 2em 25% 0.5em;
+    display: inline-block;
+    font-size: 2.5em;
+
+}
+
+.headerBlock p {
+    margin: 1em 25% 1em;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.lnkBtn {
+    display: inline-block;
+    padding: 1.5em 2em;
+    border: 1px solid #666;
+    background: #333333;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em 0;
+
+}
+
+.lnkBtn:hover {
+    background: white;
+    color: black;
+}
+
+
+
+#articleH-Blc {
+
+    display: block;
+    color: black;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+
+}
+
+#articleH-Blc h2 {
+    margin: 1em 25%;
+    display: inline-block;
+    font-size: 2em;
+}
+
+#articleH-Blc  p {
+    margin: 1em 25% 2em;
+    display: inline-block;
+    columns: 2
+}
+
+#solutions-Blc {
+    display: block;
+    width: 100%;
+    padding: 2em 0;
+    background-color: #333333;
+
+}
+
+#solutions-Blc li div h3, #solutions-Blc li div p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+#solutions-Blc li {
+    display: inline-block;
+    width: 30%;
+    background-color: white;
+    color: black;
+
+}
+
+#solutions-Blc li div{
+    padding: 1em;
+}
+
+
+#solutions-Blc ul img {
+    width: 100%;
+    height: 30%;
+}
+
+#solutions-Blc ul {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25%;
+    width: 50%;
+
+
+
+}
+
+#articleF-Blc {
+    display: block;
+    color: black;
+    width: 100%;
+    margin: 3em 0;
+    z-index: -1;
+
+}
+
+
+
+#articleF-Blc h2 {
+    margin: 1em 25%;
+    display: inline-block;
+    font-size: 2em;
+}
+
+#articleF-Blc  p {
+
+    margin: 1em 25%;
+    display: inline-block;
+    /*font-size: 1.25em;*/
+
+}
+
+
+
+
+#aboutUs-Blc div {
+    color: white;
+    background: #333333;
+    padding: 2em;
+
+}
+
+#aboutUs-Blc div:first-child {
+    background-color: #2690d4;
+}
+
+#footer-block {
+    padding: 2em;
+    background: black;
+    color: white;
+    line-height: 1.5;
+}
+
+#footer-block div{
+    line-height: 1.5;
+    font-size: 1.25em;
+}
+
+
+
+#footer-block a {
+    text-decoration: none;
+    color: mediumblue;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+#aboutUs-Blc div, #footer-block div {
+    grid-column: span 2;
+}
+
+
+
+
+
