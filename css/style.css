@@ -20,6 +20,7 @@ p {
 }
 
 .header .bgImage{
+    display: block;
     position: absolute;
     width: 100%;
     height: 450px;
@@ -30,20 +31,19 @@ p {
 }
 
 .content {
-    display: block;
-    position: relative;;
+    display: inline-block;
+    position: relative;
+    margin: 5% 25%;
 }
 
 .content h1 {
     padding: 0;
-    margin: 3em 25% 0;
     display: inline-block;
     font-size: 2em;
 
 }
 
 .content p {
-    margin: 0 25%;
     display: inline-block;
     line-height: 1.5;
 }
@@ -55,7 +55,6 @@ p {
     background: #333;
     text-decoration: none;
     color: white;
-    margin: 1em 25%  7em;
 
 }
 
@@ -66,7 +65,7 @@ p {
 
 
 
-.articleH {
+.article {
     display: block;
     color: #333;
     width: 100%;
@@ -75,16 +74,15 @@ p {
 
 }
 
-.articleH h2 {
-    margin:0 25%;
+.article div {
+    padding: 2em 25%;
     display: inline-block;
 }
 
-.articleH p {
-    margin: 0 25% 1em;
-    display: inline-block;
+.columns {
     columns: 2
 }
+
 
 .solutions {
     display: block;
@@ -115,37 +113,18 @@ p {
 
 .solutions ul li img {
     width: 100%;
-    height: 35%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.solutions li div p {
+.solutions li div {
     margin: 0;
     padding: 0 1em 3em;
 }
 
 
 
-.articleF {
-    background: #eaeaea;
-    display: block;
-    color: #333;
-    width: 100%;
-    z-index: -1;
 
-}
-
-
-.articleF h2 {
-    margin: 0 25%;
-    display: inline-block;
-}
-
-.articleF  p {
-
-    margin: 0 25% 1em;
-    display: inline-block;
-
-}
 
 
 .aboutUs {
@@ -154,19 +133,10 @@ p {
 
 .aboutUs div {
     display: inline-block;
-    width: 49.8%;
+    width: 50%;
     padding: 0 0 2em;
+    vertical-align: top;
 
-}
-
-
-
-.aboutUs div:last-child p {
-    padding: 1em 1em 0;
-}
-
-.aboutUs div:last-child #spacer {
-   padding: 0.5em 1em 0;
 }
 
 
@@ -189,12 +159,10 @@ p {
 
 .footer div{
     display: inline-block;
-    width: 49.8%;
+    width: 50%;
 }
 
-
-
-.footer a {
+.aboutUs a, .footer a {
     text-decoration: none;
     color: mediumblue;
 }
